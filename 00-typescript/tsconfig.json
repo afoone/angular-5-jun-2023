@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
     "target": "es2016", /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "experimentalDecorators": true, /* Enables experimental support for ES7 decorators. */
   }
 }

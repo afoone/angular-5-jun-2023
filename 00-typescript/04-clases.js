@@ -14,7 +14,6 @@ class Persona {
         this._edad = edad;
     }
 }
-const persona = new Persona('Victor', 'Robles', 31);
+const persona = new Persona('Victor', 'Perez', 31);
 console.log(persona);
-persona.edad = 32;
 console.log(persona.edad);

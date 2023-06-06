@@ -7,7 +7,6 @@
 //         }
 //     }
 // }
-
 // const VelocidadMaxima = (velocidad: number) => {
 //   return <T extends { new (...args: any[]): {} }>(constructor: typeof Vehiculo) => {
 //     return class extends constructor {
@@ -24,30 +23,23 @@
 //     }
 //   }
 // }
-
 // @VelocidadMaxima(40)
 // class Vehiculo {
 //   marca: string
-
 //   constructor() {
 //     this.marca = ''
 //   }
 // }
-
 // @VelocidadMaxima(100)
 // class Taxi extends Vehiculo {
 //   constructor() {
 //     super()
 //   }
 // }
-
 // @VelocidadMaxima(200)
 // class PErsona {
 //   constructor() {}
 // }
-
 // const vehiculo = new Vehiculo()
 // console.log((vehiculo as any).velocidadMaxima); // 40
-
-
 // (vehiculo as any).run()
