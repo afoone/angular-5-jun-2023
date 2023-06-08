@@ -1,0 +1,28 @@
+.stock {
+  border: 1px solid blue;
+  padding: 3rem 1rem 1rem 1rem;
+  width: 6rem;
+  height: 10rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+
+
+.up {
+  color: blue;
+}
+
+.down {
+  color:red;
+}
+
+.mucho {
+  font-weight: bold;
+}
+
+.value {
+  font-size: 25px;
+  margin: 5px;
+}
+
