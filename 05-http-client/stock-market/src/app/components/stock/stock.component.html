@@ -1,0 +1,33 @@
+<div class="stock" *ngIf="stock">
+  <div>{{ stock.code }}</div>
+  <div
+    [ngClass]="{
+      up: stock.price > stock.previousPrice,
+      down: stock.previousPrice > stock.price,
+      mucho: isMucho(stock),
+      value: true
+    }"
+  >
+    {{ stock.price }}
+  </div>
+  <div [appSubrayado]="'green'">{{ stock.name }}</div>
+  <!-- <div *ngIf="stock.price>stock.previousPrice; else bajandoTpl">SUBIENDO!!!</div> -->
+  <!-- <div *ngIf="stock.price<stock.previousPrice">BAJANDO!!!</div> -->
+  <!-- <ng-template *ngIf="stock.price > stock.previousPrice; then subiendoTpl; else bajandoTpl"></ng-template> -->
+
+  <div [ngSwitch]="stock.estado">
+    <span *ngSwitchCase="'up'">Subiendo</span>
+    <span *ngSwitchCase="'down'">Bajando</span>
+    <span *ngSwitchDefault>Está igual</span>
+  </div>
+
+  <button (click)="onDeleteClick()">Borrar</button>
+</div>
+
+<ng-template #subiendoTpl>
+  <div>SUBIENDO</div>
+</ng-template>
+
+<ng-template #bajandoTpl>
+  <div>BAJANDO</div>
+</ng-template>

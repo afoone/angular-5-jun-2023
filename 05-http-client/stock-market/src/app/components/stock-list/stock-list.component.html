@@ -1,0 +1,3 @@
+<div class="stock-list">
+  <app-stock *ngFor="let stock of stocks" [stock]="stock" (delete)="onDelete($event)"></app-stock>
+</div>
