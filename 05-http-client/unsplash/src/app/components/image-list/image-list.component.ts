@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { Image } from 'src/app/model/image';
 import { UnsplashService } from 'src/app/services/unsplash.service';
 
@@ -7,17 +7,31 @@ import { UnsplashService } from 'src/app/services/unsplash.service';
   templateUrl: './image-list.component.html',
   styleUrls: ['./image-list.component.scss'],
 })
-export class ImageListComponent implements OnInit {
+export class ImageListComponent implements OnInit , OnChanges{
 
-  public images: Image[] = [];
+  // public images: Image[] = [];
 
-  constructor(private _unsplashService: UnsplashService) {}
+  @Input('search')
+  search: string;
+
+  constructor(public unsplashService: UnsplashService) {
+    this.search= ""
+    // this.unsplashService.fotos$.subscribe(
+    //   fotos => this.images = fotos
+    // )
+  }
 
   ngOnInit() {
-    this._unsplashService.getFotos('dogs').subscribe((value) => {
-      console.log(value.results)
-      this.images = value.results;
-      console.log(this.images)
-    });
+    console.log("on init")
+    this.unsplashService.getFotos(this.search)
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+      console.log("onchanges", changes)
+      this.unsplashService.getFotos(this.search)
+  }
+
+  moreFotos() {
+    this.unsplashService.moreFotos()
   }
 }

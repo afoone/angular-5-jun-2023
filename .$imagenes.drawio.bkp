@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2023-06-12T14:05:57.345Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="CngHNO2xVh9Q-Kz7xYU4" version="21.2.8" type="device" pages="5">
+<mxfile host="Electron" modified="2023-06-12T14:10:27.495Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="2_fN3E6BdjOlHSepHSaJ" version="21.2.8" type="device" pages="5">
   <diagram name="Página-1" id="t2jfbHHOU6y5sWUn74VA">
     <mxGraphModel dx="1517" dy="1121" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -284,10 +284,37 @@
     </mxGraphModel>
   </diagram>
   <diagram id="MdpL8O2cox6CTOcqDF4N" name="Página-5">
-    <mxGraphModel dx="2074" dy="1133" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="556" dy="1924" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Tu_Yjo2_OHi1WHWkHK8J-1" value="Search" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="-960" width="260" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Tu_Yjo2_OHi1WHWkHK8J-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="-900" width="680" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="Tu_Yjo2_OHi1WHWkHK8J-4" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.graphics.simpleIcon;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="960" y="-870" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Tu_Yjo2_OHi1WHWkHK8J-5" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.graphics.simpleIcon;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="-770" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Tu_Yjo2_OHi1WHWkHK8J-6" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.graphics.simpleIcon;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="960" y="-770" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Tu_Yjo2_OHi1WHWkHK8J-7" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.graphics.simpleIcon;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="-870" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Tu_Yjo2_OHi1WHWkHK8J-8" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.graphics.simpleIcon;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="-870" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Tu_Yjo2_OHi1WHWkHK8J-9" value="Buscar" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="-957.5" width="135" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="Tu_Yjo2_OHi1WHWkHK8J-10" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.graphics.simpleIcon;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="-770" width="160" height="80" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

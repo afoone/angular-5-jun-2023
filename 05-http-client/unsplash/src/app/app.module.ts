@@ -7,18 +7,26 @@ import { AppComponent } from './app.component';
 import { ImageListComponent } from './components/image-list/image-list.component';
 import { ImageItemComponent } from './components/image-item/image-item.component';
 import { PrimaryButtonComponent } from './components/base/primary-button/primary-button.component';
+import { FormsModule } from '@angular/forms';
+import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ImageListComponent,
     ImageItemComponent,
-    PrimaryButtonComponent
+    PrimaryButtonComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
+  ],
+  exports: [
+   ImageItemComponent,
+   ImageListComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

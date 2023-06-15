@@ -1,0 +1,12 @@
+{
+  "facturas": [
+    {
+      "id": 1,
+      "cliente": "Juand",
+      "importe": 120,
+      "pagada": true,
+      "fecha": "2019-01-01",
+      "nFact": "67773ddd"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+.search-component {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+  input {
+    width: 300px;
+    border-radius: 5px;
+  }
+}

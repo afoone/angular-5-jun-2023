@@ -1,0 +1,22 @@
+<form (ngSubmit)="submit()">
+  <div>
+    N fact
+    <input name="nFact" [(ngModel)] = "factura.nFact">
+  </div>
+  <div>
+    Cliente
+    <input [(ngModel)]="factura.cliente" name="cliente">
+  </div>
+
+  <div>
+    fecha
+    <input type="text" name="fecha" [(ngModel)]="factura.fecha">
+  </div>
+
+  <div>
+    importe
+    <input type="number" name="importe" [(ngModel)]="factura.importe" required [min]="0" [max]="10000">
+  </div>
+
+  <button type="submit">enviar</button>
+</form>

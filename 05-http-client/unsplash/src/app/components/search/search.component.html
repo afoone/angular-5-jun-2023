@@ -1,0 +1,11 @@
+<!-- <input type="text" [ngModel]="search" (ngModelChange)="onChange($event)"> -->
+
+
+<div class="search-component">
+  <input type="text" [(ngModel)]="search">
+
+  <app-primary-button (click)="buscar()">
+    Buscar
+  </app-primary-button>
+
+</div>

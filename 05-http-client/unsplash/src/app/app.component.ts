@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'unsplash';
+
+  search: string = ""
+
+  // onChange(event: string){
+  //   console.log(event)
+  //   this.search = event.toUpperCase
+  //   // this.search = event.target.value.toUpperCase()
+  // }
 }

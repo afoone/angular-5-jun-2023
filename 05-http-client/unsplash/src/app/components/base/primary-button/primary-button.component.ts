@@ -3,7 +3,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 @Component({
   selector: 'app-primary-button',
   template: `
-    <button class="primary" (click)="onClick()" >
+    <button class="ui primary button" (click)="onClick()" >
       <ng-content></ng-content>
     </button>
   `,

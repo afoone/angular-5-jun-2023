@@ -1,0 +1,33 @@
+<div class="facturas-list">
+
+    <table>
+      <tr>
+        <th>
+          Cliente
+        </th>
+        <th>
+          Numero de factura
+        </th>
+        <th>
+          Fecha
+        </th>
+        <th>
+          Importe
+        </th>
+      </tr>
+      <tr *ngFor="let factura of facturas" (click)="goTo(factura.id)">
+        <td>
+          {{factura.cliente}}
+        </td>
+        <td>
+          {{factura.nFact}}
+        </td>
+        <td>
+          {{factura.fecha}}
+        </td>
+        <td>
+          {{factura.importe}}
+        </td>
+      </tr>
+    </table>
+</div>

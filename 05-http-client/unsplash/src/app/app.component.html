@@ -1,4 +1,4 @@
-<app-primary-button>
-  Buscar
-</app-primary-button>
-<app-image-list></app-image-list>
+
+<app-search (search)="this.search = $event"></app-search>
+
+<app-image-list [search]="search"></app-image-list>
