@@ -1,5 +1,7 @@
 <div class="facturas-list">
 
+    <div>Hoy es {{ hoy | date:'d MMMM'}}</div>
+
     <table class="ui celled striped table">
       <tr>
         <th>
@@ -17,7 +19,7 @@
       </tr>
       <tr *ngFor="let factura of facturas" (click)="goTo(factura.id)">
         <td>
-          {{factura.cliente}}
+          {{ factura.cliente | clientname }}
         </td>
         <td>
           {{factura.nFact}}
@@ -26,7 +28,7 @@
           {{factura.fecha}}
         </td>
         <td>
-          {{factura.importe}}
+          {{56.443554 | currency:'CAD':'symbol-narrow':'0.2' }}
         </td>
       </tr>
     </table>

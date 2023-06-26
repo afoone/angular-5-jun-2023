@@ -13,9 +13,11 @@ import { NuevaFacturaComponent } from './pages/facturas/nueva-factura/nueva-fact
 import { HttpClientModule } from '@angular/common/http';
 import { FacturasFormComponent } from './components/facturas/facturas-form/facturas-form.component';
 import { FormsModule } from '@angular/forms';
+import { ClientNamePipe } from './pipes/client-name.pipe';
 
 @NgModule({
   declarations: [
+    // Components
     AppComponent,
     WelcomeComponent,
     AboutComponent,
@@ -23,6 +25,8 @@ import { FormsModule } from '@angular/forms';
     DetalleFacturaComponent,
     NuevaFacturaComponent,
     FacturasFormComponent,
+    // Pipes
+    ClientNamePipe,
   ],
   imports: [
     BrowserModule,

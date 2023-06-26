@@ -1,7 +1,12 @@
 export type Factura = {
   id?: number,
-  cliente: string;
+  cliente: Persona;
   nFact: number;
   fecha: string;
   importe: number;
+};
+
+export type Persona = {
+  nombre: string;
+  apellidos: string[];
 };

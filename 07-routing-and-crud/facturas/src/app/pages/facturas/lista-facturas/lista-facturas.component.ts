@@ -11,6 +11,8 @@ import { FacturasService } from 'src/app/service/facturas.service';
 export class ListaFacturasComponent implements OnInit {
   facturas: Factura[] = [];
 
+  hoy = new Date();
+
   constructor(
     private _router: Router,
     private _facturaService: FacturasService

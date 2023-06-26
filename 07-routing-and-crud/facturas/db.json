@@ -2,7 +2,43 @@
   "facturas": [
     {
       "id": 1,
-      "cliente": "Juand",
+      "cliente": {
+        "nombre": "Alfonso",
+        "apellidos": ["García", "Pérez"]
+      },
+      "importe": 120,
+      "pagada": true,
+      "fecha": "2019-01-01",
+      "nFact": "67773dddddd"
+    },
+    {
+      "id": 2,
+      "cliente": {
+        "nombre": "Pepa",
+        "apellidos": ["García", "Dominguez"]
+      },
+      "importe": 120,
+      "pagada": true,
+      "fecha": "2019-01-01",
+      "nFact": "67773dddddd"
+    },
+    {
+      "id": 3,
+      "cliente": {
+        "nombre": "Luisa",
+        "apellidos": ["Lanas", "Pérez"]
+      },
+      "importe": 120,
+      "pagada": true,
+      "fecha": "2019-01-01",
+      "nFact": "67773dddddd"
+    },
+    {
+      "id": 4,
+      "cliente": {
+        "nombre": "PEdro",
+        "apellidos": ["García", "Huesca"]
+      },
       "importe": 120,
       "pagada": true,
       "fecha": "2019-01-01",
