@@ -1,1 +1,6 @@
-<p>about works!</p>
+<div class="about-component">
+  <p>about works!</p>
+  <input type="text" [(ngModel)]="inputValue" data-testid="input-field" />
+  <button data-testid="submit-button" (click)="copiar()">enviar</button>
+  <p data-testid="data-paragraph">{{ dataValue }}</p>
+</div>

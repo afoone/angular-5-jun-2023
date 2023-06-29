@@ -12,7 +12,7 @@ import { DetalleFacturaComponent } from './pages/facturas/detalle-factura/detall
 import { NuevaFacturaComponent } from './pages/facturas/nueva-factura/nueva-factura.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FacturasFormComponent } from './components/facturas/facturas-form/facturas-form.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ClientNamePipe } from './pipes/client-name.pipe';
 
 @NgModule({
@@ -33,7 +33,8 @@ import { ClientNamePipe } from './pipes/client-name.pipe';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   // providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],

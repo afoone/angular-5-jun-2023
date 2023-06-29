@@ -8,7 +8,7 @@ export class ClientNamePipe implements PipeTransform {
 
   transform(value: Persona| undefined | null): string {
     if(!value) return "";
-    return `${value.apellidos.map(a=> a.toUpperCase()).join(" ")}, ${value.nombre.charAt(0).toUpperCase() + value.nombre.slice(1).toLowerCase()}`;
+    return `${(value.apellidos|| []).map(a=> a.toUpperCase()).join(" ")}, ${value.nombre.charAt(0).toUpperCase() + value.nombre.slice(1).toLowerCase()}`;
   }
 
 }

@@ -1,22 +1,29 @@
-<form (ngSubmit)="submit()">
-  <div>
+<form (ngSubmit)="submit()" class="ui form" [formGroup]="form">
+  <div class="field">
     N fact
-    <input name="nFact" [(ngModel)] = "factura.nFact">
+    <input name="nFact"  formControlName="nFact">
+    <small *ngIf="this.form.get('nFact')?.errors?.['required'] && form.dirty">Error: required</small>
   </div>
-  <div>
+   <div formGroupName="cliente">
     Cliente
-    <input [(ngModel)]="factura.cliente" name="cliente">
+    <input type="text" formControlName="nombre">
+    <div formArrayName="apellidos">
+      <div  class="field" *ngFor="let apellidoControl of apellidos.controls; let i = index ">
+           Apellido {{i}}
+          <input type="text" [formControlName]="i">
+      </div>
+    </div>
   </div>
 
   <div>
     fecha
-    <input type="text" name="fecha" [(ngModel)]="factura.fecha">
+    <input type="text" name="fecha" formControlName="fecha">
   </div>
 
   <div>
     importe
-    <input type="number" name="importe" [(ngModel)]="factura.importe" required [min]="0" [max]="10000">
+    <input type="number" name="importe" formControlName="importe" required [min]="0" [max]="10000">
   </div>
 
-  <button type="submit">enviar</button>
+  <button type="submit" class="ui button">enviar</button>
 </form>
